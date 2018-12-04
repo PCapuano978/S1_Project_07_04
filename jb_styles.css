@@ -29,6 +29,29 @@
 align-content, or align-self properties.
 */
 
+html {
+    position: relative;
+    background-image: url("jb_back3.png");
+    background-position: fixed;
+    background-size: .5%;
+}
+
+body {
+    align-content: top;
+    height: 100%;
+    margin: auto;
+    max-width: 1200px;
+    background: white;
+}
+
 header {
-    background-image: url("jb_back2.png");
+    background-repeat: round;
+    padding: 6em;
+}
+
+header img {
+    position: absolute;
+    left: 40%;
+    top: 1em;
+    border: solid aqua 2px;
 }
