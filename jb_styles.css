@@ -33,7 +33,7 @@ html {
     position: relative;
     background-image: url("jb_back3.png");
     background-position: fixed;
-    background-size: .5%;
+    background-size: 2%;
 }
 
 body {
@@ -45,26 +45,23 @@ body {
 }
 
 header {
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
     background-image: url("jb_back2.png");
-    background-repeat: round;
+    background-repeat: no-repeat;
+    background-size: 100%;
     padding: 6em;
     border: solid 5px black;
     text-shadow: 1px 1px black;
 }
 
 header img {
-    position: absolute;
-    left: 27.8em;
-    top: 1em;
+    margin: auto;
+    width: 30;
     border: solid aqua 2px;
     clear: both;
-}
-
-p.vertical {
-    position: absolute;
-    left: 44.7em;
-    width: 1px;
-    color: white;
 }
 
 header h1 {
@@ -73,28 +70,13 @@ header h1 {
     font-size: 3em;
 }
 
-header section.info1 h1 {
-    position: absolute;
-    left: 4.5em;
-    top: 1.5em;
-}
-
 header section.info1 p {
     color: deepskyblue;
     font-size: 1.2em;
 }
 
-header section.info2 h1 {
-    position: absolute;
-    left: 15em;
-    top: 1.5em;
-}
-
 header section.info2 p {
-    position: absolute;
-    left: 27em;
-    top: 4.5em;
-    color: blue;
+    color: deepskyblue;
     font-size: 1.7em;
 }
 
@@ -122,10 +104,21 @@ section.mainbody {
     background-repeat: round;
     border: solid 5px green;
     padding: 8em;
+    height: 10em;
+}
+
+section.mainbody ul {
+    display: inline-block;
+}
+
+section.mainbody ul li {
+    display: block;
+    flex: 0 1 auto;
+    list-style-type: none;
 }
 
 nav ul li.listmain {
-    margin: 1em 0em;
+    margin: 1em 2em;
     font-size: 2.5em;
     font-family: fantasy;
     color: blanchedalmond;
@@ -137,6 +130,7 @@ nav.mainlinks ul li a {
     text-shadow: 1px 1px black;
     font-size: 1.5em;
     color: burlywood;
+    margin: .25em 0em;
 }
 
 nav.mainlinks ul li a:visited {
@@ -148,23 +142,71 @@ nav.mainlinks ul li a:hover {
 }
 
 nav ul#classes {
-    position: absolute;
-    left: 20em;
-    top: 17em;
+
 }
 
 nav ul#camps {
-    position: absolute;
-    left: 40em;
-    top: 17em;
+
 }
 
 nav ul#store {
-    position: absolute;
-    left: 60em;
-    top: 17em;
+
 }
 
 section.secondarybody {
-    background-image: back
+    background-image: radial-gradient(closest-corner at 50% 50%, aqua, coral);
+    border: 5px solid aqua;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+}
+
+section.secondarybody p {
+    margin: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkblue;
+    text-shadow: 1px 1px cornflowerblue;
+    font-size: 1.25em;
+}
+
+footer {
+    border: coral 5px solid;
+    background-image: url("jb_back3.png");
+    background-size: .5%;
+}
+
+footer h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: orange;
+    text-align: center;
+    font-size: 3em;
+    margin: 1em;
+    text-shadow: 1px 1px greenyellow;
+}
+
+footer ul {
+    display: -webkit-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+
+footer ul li.mainslang {
+    font-family: cursive;
+    margin: 0 10em 1em 10em;
+    font-size: 1.5em;
+    color: aquamarine;
+    text-shadow: 1px 1px black;
+}
+
+footer ul li {
+    font-size: 1.2em;
+    color: blueviolet;  
+    text-shadow: 1px 1px black;
+}
+
+footer img {
+    align-content: right;
 }
